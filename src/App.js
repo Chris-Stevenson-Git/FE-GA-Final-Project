@@ -8,7 +8,7 @@ import FrontPage from './components/FrontPage'
 import './css/Home.css'
 import './css/NavBar.css'
 
-const BASE_URL = 'http://localhost:3000'
+const BASE_URL = 'https://ga-final-proj-backend.herokuapp.com'
 
 class App extends React.Component{
 
