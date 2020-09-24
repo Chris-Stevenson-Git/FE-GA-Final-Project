@@ -1,6 +1,6 @@
 import React from 'react'
 
-const BASE_URL = 'http://localhost:3000'
+const BASE_URL = 'https://ga-final-proj-backend.herokuapp.com'
 
 class AddChore extends React.Component{
 

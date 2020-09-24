@@ -3,7 +3,7 @@ import React from 'react'
 import AddMember from './AddMember'
 import AddChore from './AddChore'
 
-const BASE_URL = 'http://localhost:3000'
+const BASE_URL = 'https://ga-final-proj-backend.herokuapp.com'
 
 class Home extends React.Component{
 
