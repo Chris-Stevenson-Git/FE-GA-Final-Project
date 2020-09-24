@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+
+body {
+  background-color: #202020;
+  font-family: 'Raleway', sans-serif;
+
+}
+
+/* Nav Bar */
+
+header nav {
+  height: 80px;
+  background-color: #19181A;
+  box-shadow: 0px 0px 20px 8px #444444;
+}
+
+header ul {
+  list-style: none;
+}
+
+header li {
+  display: inline;
+  color: #B19F9E;
+  line-height: 80px;
+  font-size: 20px;
+}

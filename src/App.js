@@ -2,13 +2,20 @@ import React from 'react';
 import {HashRouter as Router, Route, Link} from 'react-router-dom'
 
 import Login from './components/Login'
+import Home from './components/Home'
+import FrontPage from './components/FrontPage'
+
+import './css/Home.css'
+import './css/NavBar.css'
 
 const BASE_URL = 'http://localhost:3000'
 
 class App extends React.Component{
 
   state = {
-    current_user_name: undefined
+    current_user_name: undefined,
+    current_user_id: undefined
+
   }
 
   componentDidMount(){
@@ -25,7 +32,7 @@ class App extends React.Component{
       console.log(data);
       //this will return null if the request 'successfully fails'
       if(data != null){
-        this.setState({current_user_name: data})
+        this.setState({current_user_name: data.name, current_user_id: data.id })
       }
     })
     .catch(err => console.warn(err))
@@ -48,8 +55,7 @@ class App extends React.Component{
               ?
               (
                 <ul>
-                  <li>Welcome {this.state.current_user_name.name} | </li>
-                  <li><Link to='/my_profile'>My Profile</Link></li>
+                  <li>Welcome {this.state.current_user_name} | </li>
                   <li><Link onClick={this.handleLogout} to='/'>Logout</Link></li>
                 </ul>
               )
@@ -62,7 +68,16 @@ class App extends React.Component{
             }
           </nav>
         </header>
-
+        {
+          this.state.current_user_name !== undefined
+          ?
+          <Route
+            exact path='/'
+            render={(props) => <Home userID={this.state.current_user_id}{...props}/>}
+            />
+          :
+          <Route exact path='/' component={FrontPage}/>
+        }
         <Route
           exact path='/login'
           render={(props) => <Login setCurrentUser={this.setCurrentUser}{...props}/>}
