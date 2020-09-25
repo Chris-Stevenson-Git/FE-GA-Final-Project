@@ -227,6 +227,7 @@ class Home extends React.Component{
                         onClick={this.addToCompletedSchedule}/>
                     }
                     <label htmlFor={i}>{chore.name}</label>
+                    <p>Location: {chore.location} | Est. Time: {chore.est_time} mins</p>
                   </div>
                 }
               })
