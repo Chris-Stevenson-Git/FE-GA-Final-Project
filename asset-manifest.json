@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/FE-GA-Final-Project/static/css/main.a64bbd96.chunk.css",
+    "main.css": "/FE-GA-Final-Project/static/css/main.4fe6dc51.chunk.css",
     "main.js": "/FE-GA-Final-Project/static/js/main.417e0546.chunk.js",
     "main.js.map": "/FE-GA-Final-Project/static/js/main.417e0546.chunk.js.map",
     "runtime-main.js": "/FE-GA-Final-Project/static/js/runtime-main.9f764c28.js",
@@ -8,15 +8,15 @@
     "static/js/2.4ebb2635.chunk.js": "/FE-GA-Final-Project/static/js/2.4ebb2635.chunk.js",
     "static/js/2.4ebb2635.chunk.js.map": "/FE-GA-Final-Project/static/js/2.4ebb2635.chunk.js.map",
     "index.html": "/FE-GA-Final-Project/index.html",
-    "precache-manifest.728f21d222b4254c67c43ce17ec319b7.js": "/FE-GA-Final-Project/precache-manifest.728f21d222b4254c67c43ce17ec319b7.js",
+    "precache-manifest.45839cff21465d40c9317c043f8518e9.js": "/FE-GA-Final-Project/precache-manifest.45839cff21465d40c9317c043f8518e9.js",
     "service-worker.js": "/FE-GA-Final-Project/service-worker.js",
-    "static/css/main.a64bbd96.chunk.css.map": "/FE-GA-Final-Project/static/css/main.a64bbd96.chunk.css.map",
+    "static/css/main.4fe6dc51.chunk.css.map": "/FE-GA-Final-Project/static/css/main.4fe6dc51.chunk.css.map",
     "static/js/2.4ebb2635.chunk.js.LICENSE.txt": "/FE-GA-Final-Project/static/js/2.4ebb2635.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.9f764c28.js",
     "static/js/2.4ebb2635.chunk.js",
-    "static/css/main.a64bbd96.chunk.css",
+    "static/css/main.4fe6dc51.chunk.css",
     "static/js/main.417e0546.chunk.js"
   ]
 }
