@@ -1,6 +1,8 @@
 import React from 'react'
 
-const BASE_URL = 'https://ga-final-proj-backend.herokuapp.com'
+// const BASE_URL = 'https://ga-final-proj-backend.herokuapp.com'
+const BASE_URL = 'http://localhost:3000'
+
 
 class AddChore extends React.Component{
 
@@ -75,18 +77,21 @@ class AddChore extends React.Component{
               type="text"
               placeholder="Chore name.."
             />
+            <br/>
             <input
               onChange={this.handleInput}
               name="location"
               type="text"
               placeholder="Location.."
             />
+          <br/>
             <input
               onChange={this.handleInput}
               name="est_time"
               type="number"
               placeholder="Est. duration (mins)"
             />
+          <br/>
             <select
               onChange={this.handleInput}
               name='user'
@@ -98,12 +103,14 @@ class AddChore extends React.Component{
                 })
               }
             </select>
+            <br/>
             <input
               onChange={this.handleInput}
               name="frequency"
               type="number"
               placeholder="Days before it has to be repeated"
             />
+          <br/>
           <button>Add</button>
         </form>
         <button onClick={this.props.hide}>Close</button>

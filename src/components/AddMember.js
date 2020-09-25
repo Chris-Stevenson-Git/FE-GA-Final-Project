@@ -1,6 +1,8 @@
 import React from 'react'
 
-const BASE_URL = 'https://ga-final-proj-backend.herokuapp.com'
+// const BASE_URL = 'https://ga-final-proj-backend.herokuapp.com'
+const BASE_URL = 'http://localhost:3000'
+
 
 class AddMember extends React.Component{
 

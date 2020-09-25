@@ -7,8 +7,11 @@ import FrontPage from './components/FrontPage'
 
 import './css/Home.css'
 import './css/NavBar.css'
+import './css/FrontPage.css'
+import './css/Form.css'
 
-const BASE_URL = 'https://ga-final-proj-backend.herokuapp.com'
+// const BASE_URL = 'https://ga-final-proj-backend.herokuapp.com'
+const BASE_URL = 'http://localhost:3000'
 
 class App extends React.Component{
 
@@ -62,7 +65,7 @@ class App extends React.Component{
               :
               (
                 <ul>
-                  <li><Link to='/login'>Login</Link></li>
+                  <li><Link to='/login'>Login/Signup</Link></li>
                 </ul>
               )
             }

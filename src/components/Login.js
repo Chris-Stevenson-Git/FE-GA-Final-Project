@@ -1,6 +1,8 @@
 import React from 'react'
 
-const BASE_URL = 'https://ga-final-proj-backend.herokuapp.com'
+// const BASE_URL = 'https://ga-final-proj-backend.herokuapp.com'
+const BASE_URL = 'http://localhost:3000'
+
 
 class Login extends React.Component{
   state = {
@@ -91,8 +93,10 @@ class Login extends React.Component{
   render(){
     return(
       <form onSubmit={this.handleSubmit}>
-        <div onClick={this.setForm} name='login'>Login</div>
-        <div onClick={this.setForm} name='signup'>Sign Up</div>
+        <div className='loginButton' onClick={this.setForm} name='login'>Login</div>
+        |
+        <div className='loginButton' onClick={this.setForm} name='signup'>Sign Up</div>
+        <br/>
         {
           this.state.form === 'signup'
           &&

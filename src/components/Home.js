@@ -3,7 +3,9 @@ import React from 'react'
 import AddMember from './AddMember'
 import AddChore from './AddChore'
 
-const BASE_URL = 'https://ga-final-proj-backend.herokuapp.com'
+// const BASE_URL = 'https://ga-final-proj-backend.herokuapp.com'
+const BASE_URL = 'http://localhost:3000'
+
 
 class Home extends React.Component{
 
@@ -211,11 +213,11 @@ class Home extends React.Component{
               this.state.dashboard.chores.map(chore => {
                 if(this.props.userID === parseInt(chore.user_id)){
                   const i = `myChores${chore.id}`
-                  let completed_css = 'incomplete'
+                  let completed_css = 'chore incomplete'
                   if(chore.completed){
-                    completed_css = 'completed'
+                    completed_css = 'chore completed'
                   }
-                  return <div className='chore'>
+                  return <div className={completed_css}>
                     {
                       chore.completed === false &&
                       <input

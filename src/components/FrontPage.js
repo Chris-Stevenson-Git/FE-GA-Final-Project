@@ -4,8 +4,8 @@ class FrontPage extends React.Component{
 
   render(){
     return(
-      <div>
-        Test page for Advertisment
+      <div className='frontPage'>
+        Chore Wheel App
       </div>
     )//return
   }//render

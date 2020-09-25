@@ -1,0 +1,17 @@
+form {
+  width: 60vw;
+  margin: 200px auto;
+  text-align: center;
+  color: #B19F9E;
+}
+
+form .loginButton {
+  display: inline-block;
+  font-size: 25px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+form input, form select {
+  width: 250px;
+}
